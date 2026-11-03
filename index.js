@@ -177,4 +177,5 @@ app.get('/', (req, res) => res.json({ name: 'StudioSpace API', status: 'ok' }));
 
 await client.connect();
 await col('bookings').createIndex({ studioId: 1, status: 1, startTs: 1 });
+app.get('/api/health', (req, res) => res.json({ ok: true, service: 'StudioSpace API' }));
 app.listen(PORT, () => console.log(`StudioSpace API running on :${PORT}`));
