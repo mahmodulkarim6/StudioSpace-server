@@ -2,7 +2,7 @@
 
 Express.js and MongoDB backend for **StudioSpace**, a peer-to-peer marketplace for booking creative studios.
 
-**Client Repository:** https://github.com/YOUR-USERNAME/studiospace-client
+**Client Repository:** https://github.com/mahmodulkarim6/StudioSpace-client
 **Live Site:** https://YOUR-VERCEL-URL.vercel.app
 **Live API:** https://YOUR-RENDER-URL.onrender.com
 
@@ -35,18 +35,25 @@ Node.js, Express.js, MongoDB, Better Auth
 | GET | `/api/bookings/mine` | Private | My bookings |
 | GET | `/api/bookings/requests` | Private | Requests for my studios |
 | PATCH | `/api/bookings/:id/status` | Guest or Host | Cancel, confirm, decline or complete |
-| GET / POST | `/api/wishlist` | Private | Saved studios |
+| GET | `/api/wishlist` | Private | My saved studio ids |
+| POST | `/api/wishlist/:id` | Private | Save or unsave a studio |
 | GET | `/api/stats` | Public | Studio counts per category |
+| GET | `/api/health` | Public | Health check for deployment |
 
 ## Local Setup
 
 Requirements: Node.js 18 or newer and a MongoDB Atlas database.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/studiospace-server.git
-cd studiospace-server
+git clone https://github.com/mahmodulkarim6/StudioSpace-server.git
+cd StudioSpace-server
 npm install
-cp .env.example .env
+```
+
+Create a `.env` file in the server folder and fill it in:
+```
+PORT=5000
+...
 ```
 
 Fill in `.env`:
