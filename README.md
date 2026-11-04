@@ -3,8 +3,8 @@
 Express.js and MongoDB backend for **StudioSpace**, a peer-to-peer marketplace for booking creative studios.
 
 **Client Repository:** https://github.com/mahmodulkarim6/StudioSpace-client
-**Live Site:** https://YOUR-VERCEL-URL.vercel.app
-**Live API:** https://YOUR-RENDER-URL.onrender.com
+**Live Site:** https://studiospace-client-iota.vercel.app
+**Live API:** https://studiospace-server-lovat.vercel.app
 
 ## Features
 
@@ -61,7 +61,7 @@ Fill in `.env`:
 PORT=5000
 MONGODB_URI=your MongoDB connection string (database name: studiospace)
 BETTER_AUTH_SECRET=a random string of 32 or more characters
-CLIENT_URL=http://localhost:3000
+CLIENT_URL=https://studiospace-client-iota.vercel.app
 GOOGLE_CLIENT_ID=your Google OAuth client id
 GOOGLE_CLIENT_SECRET=your Google OAuth client secret
 NODE_ENV=development
